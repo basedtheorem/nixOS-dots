@@ -34,7 +34,6 @@
     feh
     nil
     imwheel
-    
 
   # Desktop
     qtile
@@ -42,11 +41,10 @@
     xwallpaper
     xbanish
     xorg.xset
-    dunst
-    zathura
     fontpreview
     flameshot
     cloudflare-warp
+    activitywatch
      
   # Apps
     vivaldi-ffmpeg-codecs
@@ -61,6 +59,9 @@
     yt-dlp
     widevine-cdm
     alsa-utils
+
+  # Dev
+   rustup
           
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
