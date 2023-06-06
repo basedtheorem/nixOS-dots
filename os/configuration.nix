@@ -30,7 +30,7 @@
     extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
   };
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
   time.timeZone = "Pacific/Auckland";
@@ -67,6 +67,19 @@
     intel-gpu-tools
     polkit
     uhk-agent
+    gnomeExtensions.unite
+    gnomeExtensions.paperwm
+    gnomeExtensions.just-perfection
+    gnomeExtensions.another-window-session-manager
+    gnome.gnome-tweaks
+    (graphite-gtk-theme.override {
+      wallpapers = true;
+      withGrub = true;
+      grubScreens = [ "2k" "1080p" ];
+      themeVariants = [ "all" ];
+    })
+    gtk4
+    tela-circle-icon-theme
   ];
 
   services = {
@@ -74,7 +87,7 @@
     thermald.enable = true;
     blueman.enable = true;
     tlp.enable = false;
-
+    xbanish.enable = true;
     logind.extraConfig = ''
       IdleActionSec=120min
     '';
@@ -88,8 +101,9 @@
     xserver = {
       enable = true;
       displayManager.gdm.enable = true;
-      displayManager.defaultSession = "none+qtile";
-      windowManager.qtile.enable = true;
+      desktopManager.gnome.enable = true;
+      #displayManager.defaultSession = "none+qtile";
+      #windowManager.qtile.enable = true;
       layout = "us";
       libinput = {
         enable = true;
@@ -124,6 +138,7 @@
   };
 
   hardware = {
+    pulseaudio.enable = false;
     bluetooth.enable = true;
     cpu.intel.updateMicrocode = config.hardware.enableRedistributableFirmware;
     nvidia.prime = {
