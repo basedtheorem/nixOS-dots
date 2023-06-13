@@ -23,7 +23,8 @@
     fzf
     file
     fd
-    tldr
+    tealdeer
+    delta
     bat
     pciutils
     jq
@@ -34,9 +35,10 @@
     feh
     nil
     imwheel
+    exa
+    zoxide
 
   # Desktop
-    qtile
     ranger
     xwallpaper
     xbanish
@@ -49,6 +51,8 @@
   # Apps
     vivaldi-ffmpeg-codecs
     flatpak
+    foliate
+    anki
     obsidian
     vscode-fhs
     armcord

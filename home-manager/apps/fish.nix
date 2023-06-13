@@ -6,6 +6,7 @@
       set NIXPKGS_ALLOW_UNFREE 1
       set -U fish_greeting
       starship init fish | source
+      zoxide init fish | source
       bind \b 'backward-kill-bigword'
       bind \ea 'prevd-or-backward-word'
       bind \ed 'nextd-or-forward-word'
