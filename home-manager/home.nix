@@ -23,7 +23,8 @@
     fzf
     file
     fd
-    tldr
+    tealdeer
+    delta
     bat
     pciutils
     jq
@@ -34,22 +35,28 @@
     feh
     nil
     imwheel
+    exa
+    zoxide
 
   # Desktop
-    qtile
     ranger
     xwallpaper
     xbanish
     xorg.xset
     fontpreview
     flameshot
-    cloudflare-warp
     activitywatch
+    syncthing
+    mullvad-vpn
      
   # Apps
     vivaldi-ffmpeg-codecs
     flatpak
+    foliate
+    anki
+    gnome-feeds
     obsidian
+    cryptomator
     vscode-fhs
     armcord
     
