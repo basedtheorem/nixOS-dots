@@ -45,15 +45,18 @@
     xorg.xset
     fontpreview
     flameshot
-    cloudflare-warp
     activitywatch
+    syncthing
+    mullvad-vpn
      
   # Apps
     vivaldi-ffmpeg-codecs
     flatpak
     foliate
     anki
+    gnome-feeds
     obsidian
+    cryptomator
     vscode-fhs
     armcord
     

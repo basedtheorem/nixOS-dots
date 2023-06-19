@@ -17,17 +17,17 @@
 
       keys.normal = {
         ";" = "insert_mode";
-        "i" = "move_line_up";
-        "j" = "move_char_left";
-        "k" = "move_line_down";
-        "l" = "move_char_right";
+        "u" = "move_line_up";
+        "n" = "move_char_left";
+        "e" = "move_line_down";
+        "i" = "move_char_right";
         "h" = "collapse_selection";
         "A-h" = "flip_selections";
 
-        "A-j"  = "select_prev_sibling";
-        "A-k"  = "shrink_selection";
-        "A-l"  = "expand_selection";
-        "A-;" = "select_next_sibling";
+        "A-n"  = "select_prev_sibling";
+        "A-e"  = "shrink_selection";
+        "A-i"  = "expand_selection";
+        "A-o" = "select_next_sibling";
       };
 
       keys.insert = {
