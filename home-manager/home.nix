@@ -54,7 +54,6 @@
     flatpak
     foliate
     anki
-    gnome-feeds
     obsidian
     cryptomator
     vscode-fhs
