@@ -14,9 +14,10 @@
 
     shellAbbrs = 
       {
-        l = "ls";
-        la = "ls -la";
-        ll = "ls -l";
+        l = "exa";
+        la = "exa -la";
+        ll = "exa -l";
+        ls = "exa";
         cat = "bat";
         dots = "cd ~/dots/";
         hm = "cd ~/dots/home-manager";
@@ -29,6 +30,8 @@
         shx = "sudo hx";
         fonts = "fc-list";
         config = "~/.config";
+        cd = "z";
+        
       };
   };
 }
