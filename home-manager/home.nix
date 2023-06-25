@@ -60,7 +60,6 @@
     armcord
     
   # Media
-    mpv
     ffmpeg
     yt-dlp
     widevine-cdm

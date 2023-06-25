@@ -83,6 +83,7 @@
   ];
 
   services = {
+    mullvad-vpn.enable = true;
     fstrim.enable = true;
     thermald.enable = true;
     blueman.enable = true;
