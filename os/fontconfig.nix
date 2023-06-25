@@ -13,6 +13,7 @@
       noto-fonts
       noto-fonts-emoji
       noto-fonts-cjk
+      twitter-color-emoji
       liberation_ttf
       (nerdfonts.override { fonts = [
         "FiraCode"  
@@ -30,7 +31,7 @@
       hinting = {
         enable = true;
         autohint = true;
-        style = "hintslight";
+        style = "slight";
       };
       defaultFonts = {
         serif = [ "Roboto" "Symbols Nerd Font Mono" ];
