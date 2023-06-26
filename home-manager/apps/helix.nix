@@ -31,8 +31,9 @@
         "l" = "insert_mode";
         "L" = "insert_at_line_start";
 
-        "C-left" = "move_prev_word_end";
+        "C-left" = "move_prev_word_start";
         "C-right" = "move_next_word_start";
+        "C-f" = "search";
       };
 
       keys.normal.g = {
@@ -58,12 +59,13 @@
         "I" = "keep_selections";
         "A-I" = "remove_selections";
       };
-      
+      # on the go me here
       keys.insert = {
         "C-backspace" = "delete_word_backward";
         "A-x" = "normal_mode";
-        "C-left" = "move_prev_word_end";
+        "C-left" = "move_prev_word_start";
         "C-right" = "move_next_word_start";
+        "C-f" = "search";
       };
 
       keys.select = {
