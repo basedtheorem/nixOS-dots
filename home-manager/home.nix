@@ -35,14 +35,15 @@
     feh
     nil
     imwheel
+    nix-output-monitor
     exa
     zoxide
 
   # Desktop
     ranger
     xwallpaper
-    xbanish
     xorg.xset
+    glow
     fontpreview
     flameshot
     activitywatch

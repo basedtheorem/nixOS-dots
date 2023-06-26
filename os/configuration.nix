@@ -12,6 +12,7 @@
       efi.efiSysMountPoint = "/boot/efi";
       grub.efiSupport = true;
       grub.device = "nodev";
+      grub.configurationLimit = 10;
     };
     kernelParams = [
       "acpi_rev_override" "mem_sleep_default=deep" "intel_iommu=igfx_off" "nvidia-drm.modeset=1"
@@ -59,8 +60,17 @@
   programs.gpaste.enable = true;
   environment.shells = with pkgs; [ fish ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nix.settings.cores = 12;
+  nix = {
+    settings.cores = 12;
+    settings.experimental-features = [ "nix-command" "flakes" ];
+    settings.auto-optimise-store = true; # manual method: `nix-store --optimise`
+    extraOptions = "trusted-users = l";
+    gc = {
+	    automatic = true;
+	    dates = "weekly";
+	    options = "--delete-older-than 1w";
+    };
+  };
 
   
   environment.systemPackages = with pkgs; [
