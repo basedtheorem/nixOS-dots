@@ -30,6 +30,9 @@
         "K" = "redo";
         "l" = "insert_mode";
         "L" = "insert_at_line_start";
+
+        "C-left" = "move_prev_word_end";
+        "C-right" = "move_next_word_start";
       };
 
       keys.normal.g = {
@@ -59,6 +62,8 @@
       keys.insert = {
         "C-backspace" = "delete_word_backward";
         "A-x" = "normal_mode";
+        "C-left" = "move_prev_word_end";
+        "C-right" = "move_next_word_start";
       };
 
       keys.select = {

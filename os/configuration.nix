@@ -56,6 +56,7 @@
     packages = with pkgs; [];
   };
   programs.fish.enable = true;  
+  programs.gpaste.enable = true;
   environment.shells = with pkgs; [ fish ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
