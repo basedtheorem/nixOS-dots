@@ -78,9 +78,10 @@
     intel-gpu-tools
     polkit
     uhk-agent
-    gnomeExtensions.paperwm
-    gnomeExtensions.just-perfection
+    gnomeExtensions.paperwm # GOAT WM
+    gnomeExtensions.just-perfection # hide panel, overview tweakes
     gnomeExtensions.another-window-session-manager
+    gnomeExtensions.unite # hide title bars
     gnome.gnome-tweaks
     (graphite-gtk-theme.override {
       wallpapers = true;
