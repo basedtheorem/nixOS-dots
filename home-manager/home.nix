@@ -46,7 +46,8 @@
     glow
     fontpreview
     flameshot
-    activitywatch
+    #vivaldi not working
+    #activitywatch
     syncthing
     mullvad-vpn
     xdotool

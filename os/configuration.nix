@@ -78,15 +78,12 @@
     intel-gpu-tools
     polkit
     uhk-agent
-    gnomeExtensions.unite
     gnomeExtensions.paperwm
     gnomeExtensions.just-perfection
     gnomeExtensions.another-window-session-manager
     gnome.gnome-tweaks
     (graphite-gtk-theme.override {
       wallpapers = true;
-      withGrub = true;
-      grubScreens = [ "2k" "1080p" ];
       themeVariants = [ "all" ];
     })
     gtk4
@@ -100,9 +97,6 @@
     blueman.enable = true;
     tlp.enable = false;
     xbanish.enable = true;
-    logind.extraConfig = ''
-      IdleActionSec=120min
-    '';
     pipewire = {
       enable = true;
       alsa.enable = false;
@@ -114,8 +108,6 @@
       enable = true;
       displayManager.gdm.enable = true;
       desktopManager.gnome.enable = true;
-      #displayManager.defaultSession = "none+qtile";
-      #windowManager.qtile.enable = true;
       layout = "us";
       libinput = {
         enable = true;
@@ -169,8 +161,6 @@
       ];
     };
   };
-  
-  console.earlySetup = true;
   
   
   powerManagement.cpuFreqGovernor = "performance";
