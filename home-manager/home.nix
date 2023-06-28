@@ -46,7 +46,7 @@
     glow
     fontpreview
     flameshot
-    #vivaldi not working
+    # AW for vivaldi not working
     #activitywatch
     syncthing
     mullvad-vpn
@@ -71,6 +71,9 @@
   # Dev
     rustup
     direnv
+    nodejs_20
+
+  # Misc
           
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
