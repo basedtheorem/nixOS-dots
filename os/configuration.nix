@@ -57,7 +57,6 @@
     packages = with pkgs; [];
   };
   programs.fish.enable = true;  
-  programs.gpaste.enable = true;
   environment.shells = with pkgs; [ fish ];
 
   nix = {
@@ -82,6 +81,7 @@
     gnomeExtensions.just-perfection # hide panel, overview tweakes
     gnomeExtensions.another-window-session-manager
     gnomeExtensions.unite # hide title bars
+    gnomeExtensions.pano # clipboard manager
     gnome.gnome-tweaks
     (graphite-gtk-theme.override {
       wallpapers = true;
