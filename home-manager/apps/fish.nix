@@ -10,6 +10,7 @@
       bind \b 'backward-kill-word'
       bind \ea 'prevd-or-backward-word'
       bind \ed 'nextd-or-forward-word'
+      list_dir
     '';
 
     shellAbbrs = {
@@ -34,6 +35,10 @@
 
     functions = {
       jot = "echo $argv >> ~/Sync/notes/Jot.md";
+      list_dir = {
+        body = "if status --is-interactive; pwd; exa -F; end;";
+        onVariable = "PWD";
+      };
     };
   };
 }
