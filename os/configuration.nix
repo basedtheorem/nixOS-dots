@@ -77,7 +77,6 @@
     intel-gpu-tools
     polkit
     uhk-agent
-    ibus # disable unicode annoying ctrl shift u shortcut
     gnomeExtensions.paperwm # GOAT WM
     gnomeExtensions.just-perfection # hide panel, overview tweakes
     gnomeExtensions.another-window-session-manager
