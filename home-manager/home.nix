@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -9,6 +9,9 @@
     ./apps/rofi.nix
     
     ./services/picom.nix
+    ./services/espanso.nix
+    ./services/flameshot.nix
+    ./services/xbanish.nix
   ];
   
   home.username = "l";
@@ -43,14 +46,14 @@
     ranger
     xwallpaper
     xorg.xset
+    xdotool
+    xbanish
     glow
     fontpreview
-    flameshot
     # AW for vivaldi not working
     #activitywatch
     syncthing
     mullvad-vpn
-    xdotool
      
   # Apps
     vivaldi-ffmpeg-codecs
@@ -99,7 +102,7 @@
     # '';
   };
 
-
+  xsession.enable = true;
   home.sessionVariables = {
     EDITOR = "hx";
     NIXPKGS_ALLOW_UNFREE = 1;

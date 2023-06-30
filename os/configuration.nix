@@ -97,7 +97,7 @@
     thermald.enable = true;
     blueman.enable = true;
     tlp.enable = false;
-    xbanish.enable = true;
+
     pipewire = {
       enable = true;
       alsa.enable = false;
