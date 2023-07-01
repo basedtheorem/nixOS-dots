@@ -31,6 +31,7 @@
       fonts = "fc-list";
       config = "~/.config";
       cd = "z";
+      lg = "lazygit";
     };
 
     functions = {
