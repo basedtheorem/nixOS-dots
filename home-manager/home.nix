@@ -24,7 +24,7 @@
     htop
     brightnessctl
     ripgrep
-    fzf
+    skim # fzf alt.
     file
     fd
     tealdeer

@@ -32,6 +32,7 @@
       config = "~/.config";
       cd = "z";
       lg = "lazygit";
+      fzf = "sk";
     };
 
     functions = {
