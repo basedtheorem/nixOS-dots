@@ -33,12 +33,14 @@
       cd = "z";
       lg = "lazygit";
       fzf = "sk";
+      jt = "jot '";
+      jot = "jot '";
     };
 
     functions = {
       jot = "echo $argv >> ~/Sync/notes/Jot.md";
       list_dir = {
-        body = "if status --is-interactive; pwd; exa -F; end;";
+        body = "if status --is-interactive; pwd; echo ''; exa -F; end;";
         onVariable = "PWD";
       };
     };
