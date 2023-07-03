@@ -4,7 +4,7 @@
     enable = true;
  
     settings = {
-      theme = "onedark";
+      theme = "flatwhite";
       editor = {
         line-number = "relative";
         lsp.display-messages = true;

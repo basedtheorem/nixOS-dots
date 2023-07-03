@@ -50,6 +50,7 @@
     xdotool
     xbanish
     glow
+    amberol
     fontpreview
     # AW for vivaldi not working
     #activitywatch
@@ -111,4 +112,7 @@
 
  
   programs.home-manager.enable = true;
+  programs.emacs = {
+    enable = true;
+  };
 }
