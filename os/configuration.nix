@@ -77,8 +77,8 @@
     intel-gpu-tools
     polkit
     uhk-agent
-    gnomeExtensions.paperwm # GOAT WM
     gnomeExtensions.just-perfection # hide panel, overview tweakes
+    gnomeExtensions.paperwm
     gnomeExtensions.another-window-session-manager
     gnomeExtensions.unite # hide title bars
     gnomeExtensions.pano # clipboard manager
