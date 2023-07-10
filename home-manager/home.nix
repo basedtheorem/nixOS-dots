@@ -105,6 +105,7 @@
   };
 
   xsession.enable = true;
+  systemd.user.startServices = true; # fixes warning: 'systemd user session is degraded'
   home.sessionVariables = {
     EDITOR = "hx";
     NIXPKGS_ALLOW_UNFREE = 1;
