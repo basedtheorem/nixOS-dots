@@ -15,6 +15,7 @@
       noto-fonts-cjk
       twitter-color-emoji
       liberation_ttf
+      mplus-outline-fonts
       (nerdfonts.override { fonts = [
         "FiraCode"  
         "DroidSansMono"
