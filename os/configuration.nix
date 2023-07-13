@@ -54,7 +54,9 @@
     description = "L";
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.fish;
-    packages = with pkgs; [];
+    packages = with pkgs; [
+      (callPackage ./uhk-agent.nix {})
+    ];
   };
   programs.fish.enable = true;  
   environment.shells = with pkgs; [ fish ];
@@ -76,7 +78,6 @@
     helix
     intel-gpu-tools
     polkit
-    uhk-agent
     gnomeExtensions.just-perfection # hide panel, overview tweakes
     gnomeExtensions.paperwm
     gnomeExtensions.another-window-session-manager
@@ -145,6 +146,7 @@
   hardware = {
     pulseaudio.enable = false;
     bluetooth.enable = true;
+    keyboard.uhk.enable = true;
     cpu.intel.updateMicrocode = config.hardware.enableRedistributableFirmware;
     nvidia.prime = {
       sync.enable = true;

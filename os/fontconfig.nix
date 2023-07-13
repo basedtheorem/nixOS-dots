@@ -1,4 +1,4 @@
-{ pkgs, config, ... }: {
+{ pkgs, ... }: {
 
   fonts = {
     fontDir.enable = true;
@@ -15,7 +15,7 @@
       noto-fonts-cjk
       twitter-color-emoji
       liberation_ttf
-      mplus-outline-fonts
+      mplus-outline-fonts.githubRelease
       (nerdfonts.override { fonts = [
         "FiraCode"  
         "DroidSansMono"
@@ -37,7 +37,7 @@
       defaultFonts = {
         serif = [ "Roboto" "Symbols Nerd Font Mono" ];
         sansSerif = [ "Readex Pro" "Symbols Nerd Font Mono" ];
-        monospace = [ "jetBrains Mono" "Symbols Nerd Font Mono" ];
+        monospace = [ "M PLUS 1 Code" "Symbols Nerd Font Mono" ];
         emoji = [ "Noto Color Emoji" "Symbols Nerd Font Mono" ];
       };
     };
