@@ -83,6 +83,7 @@
     gnomeExtensions.another-window-session-manager
     gnomeExtensions.unite # hide title bars
     gnomeExtensions.pano # clipboard manager
+    gnomeExtensions.application-volume-mixer
     gnome.gnome-tweaks
     (graphite-gtk-theme.override {
       wallpapers = true;

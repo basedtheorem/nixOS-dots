@@ -65,7 +65,7 @@
     obsidian
     cryptomator
     vscode-fhs
-    armcord
+    gtkcord4
     
   # Media
     ffmpeg
